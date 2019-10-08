@@ -30,5 +30,4 @@ Having started this project early on in my React learning and later returning to
 - Add a modal message: 'No Peeking!', if clicked on a day not yet reached
 - Make mobile friendly
 - Divide the data object's two intertwined 'day' roles
-
-Live example!
+- Live example!
