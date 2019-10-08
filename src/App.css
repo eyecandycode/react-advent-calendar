@@ -1,33 +1,89 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+body {
+  background-image: url(./xmasOptimised.png);
+  border-style: none;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.App {
+  width: 100vw;
+}
+
+.container {
+  width: 100vw;
+}
+
+.image-grid {
+  position: absolute;
+  display: grid;
+  width: 100vw;
+  padding: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 150px;
+  grid-row-gap: 170px;
+  grid-auto-flow: row;
+}
+.back-image {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.712),
+      rgba(255, 255, 255, 0.795)
+    ),
+    url(https://media3.giphy.com/media/JzY0gA5agzZSg/giphy.gif?cid=790b761162d6905c8ad5ee12a4947cbf9e21ba71a8562d96&rid=giphy.gif);
+  width: 140px;
+  height: 200px;
+  justify-self: center;
+  object-fit: contain;
+}
+
+.doors {
+  display: grid;
+  width: 100vw;
+  padding: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 150px;
+  grid-row-gap: 170px;
+  grid-auto-flow: row;
+}
+.back {
+  width: 140px;
+  justify-self: center;
+}
+
+.shine {
+  box-shadow: 15px 0px 100px 12px rgba(255, 255, 255, 0.8),
+    0 0 40px 9px rgba(255, 253, 224, 0.7);
+  transition: all 1s ease-in-out;
+}
+
+/* FRONT DOOR */
+.door {
+  background: linear-gradient(rgb(255, 126, 126), rgb(250, 109, 109));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 140px;
+  border: 2.5px solid rgb(255, 209, 209);
+  color: rgb(255, 225, 225);
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Domine", serif;
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 1.4s ease-in-out;
+  z-index: -2;
+}
+
+.door span {
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.opened {
+  background-color: rgb(250, 102, 102);
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px)
+    rotateY(-105deg);
 }

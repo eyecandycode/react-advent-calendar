@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Advent Calendar
 
-## Available Scripts
+With Xmas perpetually looming, this totally essential app will treat your loved ones to some virtual festive cheer.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+`npm install`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`npm start`
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Notes
 
-### `npm test`
+The variable 'month' in App.js acts as a lock for anyone trying to peek in the calendar prior to December. Change this to your month while testing.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The data object functions both as providing text to the modal boxes and as days on the front of the doors. This rather unintuitive functionality is planned to be addressed.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Displaying the peak of web animation sophistication, each door reveals an animated Xmas scene. Clicking again displays a modal, ready for a message of your choosing. Text and gif source stored in separate JSON file for easy editing.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Caveats
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Having started this project early on in my React learning and later returning to it, this is somewhat of a frankenmonster in regards to React best practises. For example, the addition of CSS classes triggers the door animations. So don't look at this as an example of prime React-like-functionality, by any means.
 
-### `npm run eject`
+## To-dos
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Save which days have been opened in localStorage, and have the doors remain open over new sessions
+- Add some garish celebratory animation on the 24th
+- Make it so the doors will only open in December?
+- Add a modal message: 'No Peeking!', if clicked on a day not yet reached
+- Make mobile friendly
+- Divide the data object's two intertwined 'day' roles
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Live example!
